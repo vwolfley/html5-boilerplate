@@ -156,9 +156,9 @@ using some polyfill CDN service, like [cdn.polyfill.io](https://cdn.polyfill.io/
 just put it before the other scripts in the bottom of the page:
 
 ```html
-    <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
@@ -209,8 +209,7 @@ being able to serve jQuery to Chinese users.
 While the jQuery CDN is a strong default solution your site or application may
 require a different configuration. Testing your site with services like
 [WebPageTest](https://www.webpagetest.org/) and browser tools like
-[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) or
-[YSlow](https://developer.yahoo.com/yslow/) will help you examine the real
+[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) will help you examine the real
 world performance of your site and can show where you can optimize your specific
 site or application.
 
