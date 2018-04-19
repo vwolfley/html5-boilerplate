@@ -23,7 +23,7 @@ FOUC](https://www.paulirish.com/2009/avoiding-the-fouc-v3/).
 
 ## Language Attribute
 
-Please consider specifying the language of your content by adding a [value](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) to the `lang`
+Please consider specifying the language of your content by adding a [value](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) to the `lang`
 attribute in the `<html>` as in this example:
 
 ```html
@@ -120,8 +120,9 @@ HTML5 Boilerplate comes with a simple setup that strikes a good balance for gene
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
+
 ## Web App Manifest
-Html5 Boiplerplate includes a simple web app manifest file. 
+HTML5 Boilerplate includes a simple web app manifest file. 
 
 The web app manifest is a simple JSON file that allows you to control how your 
 app appears on a device's home screen, what it looks like when it launches
@@ -133,12 +134,13 @@ It's linked to from the HTML as follows:
 ```html
         <link rel="manifest" href="site.webmanifest">
 ```
-Our [site.webmanifest[(https://github.com/h5bp/html5-boilerplate/blob/master/src/site.webmanifest) contains a very skeletal "app" definition, just to show the basic usage. 
-You should fill this file out with [more information about your site or applicaion](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+Our [site.webmanifest](https://github.com/h5bp/html5-boilerplate/blob/master/src/site.webmanifest) contains a very skeletal "app" definition, just to show the basic usage. 
+You should fill this file out with [more information about your site or application](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
 ## Favicons and Touch Icon
 
-The shortcut icons should be put in the root directory of your site. HTML5
+The shortcut icons should be put in the root directory of your site. `favicon.ico` 
+is automatically picked up by browsers if it's placed in the root.  HTML5
 Boilerplate comes with a default set of icons (include favicon and one Apple
 Touch Icon) that you can use as a baseline to create your own.
 
@@ -178,10 +180,10 @@ using some polyfill CDN service, like [cdn.polyfill.io](https://cdn.polyfill.io/
 just put it before the other scripts in the bottom of the page:
 
 ```html
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
@@ -191,7 +193,7 @@ If you like to just include the polyfills yourself, you could include them in
 `js/plugins.js`. When you have a bunch of polyfills to load in, you could
 also create a `polyfills.js` file in the `js/vendor` directory or include the files 
 individually and combine them using a build tool. Always ensure that the polyfills 
-are all loaded before any other Javascript.
+are all loaded before any other JavaScript.
 
 There are some misconceptions about Modernizr and polyfills. It's important
 to understand that Modernizr just handles feature checking, not polyfilling

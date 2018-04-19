@@ -1,5 +1,11 @@
-### HEAD
+### 6.0.1 (August 20, 2017)
 
+* Reverts .visuallyhidden (see [#1985](https://github.com/h5bp/html5-boilerplate/issues/1985))
+
+
+### 6.0.0 (August 17, 2017)
+
+* Fix Bug: .visuallyhidden on macOS VO fixes #1985 ([#1989](https://github.com/h5bp/html5-boilerplate/pull/1989))
 * Adds web app manifest file ([#1963](https://github.com/h5bp/html5-boilerplate/pull/1963))
 * Update to jQuery 3.2.1 ([#1942](https://github.com/h5bp/html5-boilerplate/pull/1942))
 * Improve ::selection documentation which became confusing after c7057be ([#1955](https://github.com/h5bp/html5-boilerplate/pull/1955))
@@ -11,9 +17,9 @@
 * Update .gitattributes for Web Projects ([#1935](https://github.com/h5bp/html5-boilerplate/pull/1935))
 * Add the link for useful .gitignore templates ([#1936](https://github.com/h5bp/html5-boilerplate/pull/1936))
 * Node plumbing updated ([#1925](https://github.com/h5bp/html5-boilerplate/pull/1925)) ([#1928](https://github.com/h5bp/html5-boilerplate/pull/1928)) ([#1931](https://github.com/h5bp/html5-boilerplate/pull/1931))
-* Use es2015 syntax in mocha tests ([#1788](https://github.com/h5bp/html5-boilerplate/pull/1788)) 
+* Use es2015 syntax in mocha tests ([#1788](https://github.com/h5bp/html5-boilerplate/pull/1788))
 * Scope :first-letter selector for print styles ([#1904](https://github.com/h5bp/html5-boilerplate/pull/1904))
-* Add SRI Hash for jQuery ([#1904](https://github.com/h5bp/html5-boilerplate/pull/1904)) 
+* Add SRI Hash for jQuery ([#1904](https://github.com/h5bp/html5-boilerplate/pull/1904))
 * Update .jshintrc ([#1903](https://github.com/h5bp/html5-boilerplate/pull/1903))
 * Improve accessibility with visuallyhidden content ([#1900](https://github.com/h5bp/html5-boilerplate/pull/1900))
 * Tell users that IE 8 and 9 are outdated
@@ -213,7 +219,7 @@
 
 * Update to Modernizr 2.5.3.
 
-### 3.0.1 (February 08, 2012).
+### 3.0.1 (February 08, 2012)
 
 * Update to Modernizr 2.5.2 (includes html5shiv 3.3).
 
@@ -274,7 +280,7 @@
 * Remove `handheld.css` as it has very poor device support.
 * Remove touch-icon `link` elements from the HTML and include improved
   touch-icon support.
-* Remove the cache-busting query paramaters from files references in
+* Remove the cache-busting query parameters from files references in
   the HTML.
 * Remove IE6 PNGFix.
 
